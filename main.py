@@ -1954,7 +1954,7 @@ if __name__ == "__main__":
     try:
         if os.name == 'nt':
             os.system('cls')
-        engine.connect_all()
+        os.system('python3 RiseCli.py')
         while True: time.sleep(1)
             
     except Exception as e:
