@@ -1933,7 +1933,6 @@ def main_menu():
                 c = engine.bulk_operation("set_bio", bio)
                 print(f"    Metadata synchronized for {c} accounts.")
                 time.sleep(1)
-                input("\n    Press Enter (or type anything) to continue...")
             
             elif choice == "8":
                 print("\n    --- Token List ---")
