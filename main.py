@@ -1941,7 +1941,6 @@ def main_menu():
                     voice_info = f" | Voice: {'Connected' if t.voice_connected else 'Disconnected'}"
                     status = "Connected" if t.connected else "Offline"
                     print(f"    {i}. {t.username} [{status}{retry_info}{voice_info}]")
-                input("\n    Press Enter (or type anything) to continue...")
             
             elif choice == "9":
                 sys.exit()
@@ -1950,7 +1949,6 @@ def main_menu():
             sys.exit()
         except Exception as e:
             Logger.log("ERROR", f"Menu Error: {e}")
-            input("Press Enter...")
 
 if __name__ == "__main__":
     try:
@@ -1959,6 +1957,5 @@ if __name__ == "__main__":
         main_menu()
     except Exception as e:
         print(f"Fatal Error: {e}")
-        input()
 
 
