@@ -1954,7 +1954,9 @@ if __name__ == "__main__":
     try:
         if os.name == 'nt':
             os.system('cls')
-        main_menu()
+                engine.connect_all()
+        while True: time.sleep(1)
+            
     except Exception as e:
         print(f"Fatal Error: {e}")
 
